@@ -14,7 +14,7 @@ def add_new_sale():
     add_sale_win.resizable(False,False)
     add_sale_win.title('Sales Performance Monitor - Add new sale')
 
-def view_sales():
+def view_sales_performance():
     df = pd.read_csv('sales_date.csv')
 
 root = tk.Tk()
@@ -33,8 +33,8 @@ add_sale_button = tk.Button(
     root,
     text='Add Sale',
     font=('Arial'),
-    width=28
-    # command=add_new_sale
+    width=28,
+    command=add_new_sale
 )
 add_sale_button.pack()
 
@@ -42,8 +42,8 @@ view_sales_button = tk.Button(
     root,
     text='View Sales',
     font=('Arial'),
-    width=28
-    # command=view_sales_performance
+    width=28,
+    command=view_sales_performance
 )
 view_sales_button.pack()
 
