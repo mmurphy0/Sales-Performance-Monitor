@@ -1,4 +1,4 @@
-#### Sales Performance Monitor
+# Sales Performance Monitor
 
 ## Description
 This is a Sales Performance Monitor where you can enter the sales into an app and assign a salesperson, the data gets saved to a csv file then displayed in a bar chart
@@ -6,7 +6,7 @@ This is a Sales Performance Monitor where you can enter the sales into an app an
 ## Usage
 - The app gives you the option to add a sale or view sales performance
 
-- Adding a sale
+### Adding a sale
   - You will be prompted to add the value and choose a salesperson
 
   - If you did not enter anything in the value textbox, you will be prompted to enter a value in order to continue
@@ -15,7 +15,7 @@ This is a Sales Performance Monitor where you can enter the sales into an app an
  
   - You will be returned to the main menu
 
-- View Sales
+### View Sales
   - Data is converted to a dataframe
  
   - The dataframe is displayed as a bar chart showing the total sales amounts for all salespeople
@@ -25,10 +25,10 @@ git clone(repo)
 
 cd(repo)
 
-# Windows
+### Windows
 python sales_perforance.py
 
-# MacOS & Linux
+### MacOS & Linux
 python3 sales_performance.py
 
 ## Tech Stack
