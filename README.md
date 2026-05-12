@@ -1,4 +1,4 @@
-### Sales Performance Monitor
+#### Sales Performance Monitor
 
 ## Description
 This is a Sales Performance Monitor where you can enter the sales into an app and assign a salesperson, the data gets saved to a csv file then displayed in a bar chart
