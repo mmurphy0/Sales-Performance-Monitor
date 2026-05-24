@@ -136,9 +136,7 @@ def add_new_sale():
     )
 
 def view_sales_performance():
-    df = pd.read_csv('sales_data.csv')
-
-    print(df['value'])
+    df = pd.read_csv('sales_date.csv')
 
 root = tk.Tk()
 root.geometry('+0+0')
