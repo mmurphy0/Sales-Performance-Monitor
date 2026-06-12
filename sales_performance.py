@@ -136,7 +136,17 @@ def add_new_sale():
     )
 
 def view_sales_performance():
-    df = pd.read_csv('sales_date.csv')
+    df = pd.read_csv('sales_data.csv')
+
+    salespeople = df['Salesperson']
+    values = df['Value']
+
+    plt.bar(salespeople, values)
+    plt.xlabel('Salesperson')
+    plt.ylabel('Sales Value £')
+    plt.title('Sales performance by Salesperson')
+    plt.show()
+    
 
 root = tk.Tk()
 root.geometry('+0+0')
