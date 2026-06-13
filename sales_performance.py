@@ -138,10 +138,9 @@ def add_new_sale():
 def view_sales_performance():
     df = pd.read_csv('sales_data.csv')
 
-    salespeople = df['Salesperson']
-    values = df['Value']
+    totals = df.groupby('Salesperson')['Value'].sum()
 
-    plt.bar(salespeople, values)
+    plt.bar(totals.index, totals.values)
     plt.xlabel('Salesperson')
     plt.ylabel('Sales Value £')
     plt.title('Sales performance by Salesperson')
